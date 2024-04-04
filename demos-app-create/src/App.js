@@ -6,9 +6,9 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import Login from './components/Login';
-import Regjister from './components/Regjister';
-import Home from './components/Home';
+import Login from './components/Login.js';
+import Regjister from './components/Regjister.js';
+import Home from './components/Home.js';
 function App() {
   return (
     <BrowserRouter>
@@ -27,9 +27,9 @@ function App() {
     </>
       <div>
         <Routes>
-          <Route path='/login' element={<Login/>}/> 
+          <Route path='/login' element={<Login/>}/>
           <Route path='/regjister' element={<Regjister/>}/>
-          <Route path='/home' element={<Home/>}/>
+          <Route path='/' element={<Home/>}/>
 
         </Routes>
       </div>
